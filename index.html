@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&G Are Getting Married</title>
+    <link rel="icon" type="image/x-icon" href="favicon-a.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--=============================================== BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div id="background"> 
+    
+      
+<!--=============================== SECTION 1 (header) ===============================-->  
+    <section class="header">
+        
+        <!-- DATE -->
+        <div id="header-text" class="center">
+            <img src="https://i.ibb.co/DHCVKHYK/logo.png" alt="logo">
+            <h1>09.13.2025</h1>
+        </div>
+        
+    </section>
+<!--=============================== SECTION 2 (Location) ===============================-->
+<section id="location">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6">
+            <img src="https://i.ibb.co/ccLVHz02/location-2.jpg" alt="black and white photo of house in the distance">
+        </div>
+        <div class="col-lg-7 col-sm-6 loc-text">
+            <h2 class="heading">Location</h2>
+            <div id="">
+              <a href="https://maps.app.goo.gl/Wb8Cp1hMN1SFfUM27" target="_blank" class="link">75 Black Bear Drive, Fenelon Falls Kawartha Lakes</a>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+  
+<!--=============================== SECTION 3 (Schedule) ===============================-->
+<section id="schedule" class="row">
+  <div class=" list col-lg-6 col-md-5 col-sm-12">
+    <h2 class="heading">Schedule</h2>
+    <ul>
+      <li>
+        <h4>Ceremony</h4>
+        <p>4:00pm</p>
+        <br>
+      </li>
+      <li >
+        <h4>Cocktail Hour</h4>
+        <p>5:00pm</p>
+        <br>
+      </li>
+      <li >
+        <h4>Dinner</h4>
+        <p>6:30pm</p>
+        <br>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-6 col-md-7 col-sm-12 center sched-img">
+    <img src="https://i.ibb.co/5hPvHg4B/champagne-tower.png" alt="Champagne Tower">
+  </div>
+</section>
+<!--=============================== SECTION 4 (Things to Know) ===============================-->
+<section id="details" class="center">
+    <h2 class="heading">Details</h2>
+    <!-- <p>We're so excited to celebrate with you at our outdoor wedding!</p> -->
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <h2>DRESS CODE</h2>
+        <p>As the event will take place outdoors, ladies, we suggest wearing thicker heels to navigate the terrain, and don't forget to bring sunglasses to stay shaded from the sun. As we'll have a campfire later in the evening, we also recommend bringing a light jacket or a change of clothing to stay cozy by the fire.</p>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <h2>PARTY TIME</h2>
+        <p>We'll be serving drinks during cocktail hour and throughout dinner to keep the celebration going! After that, the rest of the evening is BYOB, so feel free to bring your favorite drinks to enjoy!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <h2>REGISTRY AND GIFTS</h2>
+        <p>We are so happy to be celebrating our special day with you Your presence at our wedding is the greatest gift we could ask for. Please don't feel obligated to bring a gift—your love and support means the world to us!</p>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <h2>RSVP</h2>
+        <p>To RSVP fill out the <a href="rsvp.html" class="link">RSVP Form</a> by July 4<sup>th</sup>, 2025 
+        <br><br>If you have any other questions please reachout to us by email at <a href="mailto:gstevens.bswann@gmail.com" class="link">gstevens.bswann@gmail.com</a></p>
+      </div>
+    </div>
+</section>
+<!--=============================== DATE COUNTDOWN ===============================--> 
+<section class="bottom-footer">
+  <h2 class="center">WEDDING COUNTDOWN</h2>
+  <p id="demo"></p>
+</section>
+</div>
+<!--=============================== NAV ===============================--> 
+    
+<div id="nav-header" class="container-fluid nav-light fixed-top">
+  <div class="row">
+    <!-- col 2 (NAME)-->
+     <div class="col-lg-4 col-sm-2 desktop">
+      &nbsp;
+     </div>
+    <div id="names" class="col-lg-4 col-md-4 col-sm-12">
+      <div>
+       <a href="index.html"><h2>BRANDON & GENNY</h2></a>
+        </div>
+    </div>
+    <!-- col 3 (NAV) -->
+    <div class="col-lg-4 col-md-8 col-sm-12">
+      <ul class="nav">
+        <li class="nav-item-0">
+          <a class="nav-link" href="#location">LOCATION</a>
+        </li>
+        <li class="nav-item-1">
+          <a class="nav-link" href="#schedule">SCHEDULE</a>
+        </li>
+        <li class="nav-item-2">
+          <a class="nav-link" href="#details">DETAILS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--=============================== SECTION 5 (Footer) ===============================-->
+<section>
+    <div id="RSVPfooter">
+        <a href="rsvp.html">RSVP</a>
+    </div>
+</section>
+<!--=============================== JS ===============================-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    $( document ).ready(function() { 
+      // NAV SCROLLER
+      $(window).scroll(function() {
+        var Scroll = $(window).scrollTop() + 1,
+                    LocationSection = $('#location').offset().top,
+                    ScheduleSection = $('#schedule').offset().top,
+                    DetailsSection = $('#details').offset().top;
+        if (Scroll >= LocationSection) { 
+
+            $(".nav-item-0").addClass("active");
+
+        } else { 
+            $(".nav-item-0").removeClass("active");
+        }
+        if (Scroll >= ScheduleSection) { 
+            $(".nav-item-1").addClass("active");
+                    $(".nav-item-0").removeClass("active");
+        } else {
+            $(".nav-item-1").removeClass("active");
+        }
+            if (Scroll >= DetailsSection) {
+            $(".nav-item-2").addClass("active"); 
+                    $(".nav-item-1").removeClass("active");
+                    $(".nav-item-0").removeClass("active"); 
+        } else { 
+            $(".nav-item-2").removeClass("active"); 
+        }
+      });
+      
+      // NAV COLOR CHANGE
+      var nav = $(".nav-light");
+      $(window).scroll(function() {
+        
+            if ($(document).scrollTop() >= 730) {
+            nav.removeClass("nav-light").addClass("nav-dark");
+            } else {
+                nav.removeClass("nav-dark").addClass("nav-light");
+            }
+        });
+    });
+      </script>
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("September 13, 2025 16:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</body>
+</html>

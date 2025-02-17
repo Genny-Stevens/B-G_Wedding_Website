@@ -1,0 +1,289 @@
+/* COLOURS
+SLATE - #2f2e2c
+CINNIMON STICK - #845c44
+DUSTY BROWN - #897969
+OLIVE BRANCH - #5b5545
+BURLAP - #c9bca9
+COCONUT MILK - #e6e5e1
+
+*/
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@100..900&display=swap');
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300 !important;
+    font-size: 4.5em !important;
+}
+h2 {
+    font-family: "Italiana", Times, serif;
+}
+a, h3, h4, h5, p, label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500 !important;
+}
+/********************************************** NAV **********************************************/
+.nav {
+  justify-content: right;
+}
+.nav-light {
+  padding: 20px 0px;
+}
+.nav-light a{
+  color: #e6e5e1 !important;
+  font-weight: 600 !important;
+}
+.nav-light a:hover {
+  background-color: #897969;
+  color:#2f2e2c!important;
+  border-radius: 30px;
+}
+.nav-dark {
+  background-color: #e6e5e167;
+  padding: 20px 0px;
+}
+.nav-dark a{
+  color: #2f2e2c !important;
+  font-weight: 600 !important;
+}
+.nav-dark a:hover {
+  background-color: #897969;
+  color:#e6e5e1 !important;
+  border-radius: 30px;
+}
+.active {
+  outline: 3px solid #2f2e2c;
+  border-radius: 30px;
+}
+.nav-dark #names {
+  text-shadow: 1px 1px 1px #ffffff;
+}
+#names a{
+  color: #e6e5e1;
+  text-decoration: none;
+  text-align: center !important;
+}
+#names a:hover{
+  color: #897969 !important;
+  text-decoration: none;
+  text-align: center;
+}
+#nav-header {
+  display: inline;
+}
+#nav-header .col-4 {
+  --bs-gutter-x: 1.5rem;
+}
+/********************************************** RSVP FOOTER BUTTON **********************************************/
+#RSVPfooter {
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  max-width: 98%;
+  text-align: right;
+  padding: 0px 50px;
+}
+
+#RSVPfooter a{
+  background-color: #5b5545;
+  color:#e6e5e1!important;
+  border-radius: 30px;
+  padding: 10px 70px;
+  font-family: "Italiana", Times, serif;
+  font-size: 30px;
+  text-decoration: none;
+  outline: 3px solid #2f2e2c;
+}
+#RSVPfooter a:hover {
+  background-color: #e6e5e1d4;
+  color: #2f2f2f !important;
+  
+}
+/********************************************** DESKTOP **********************************************/
+#background {
+  background-color: #2f2e2c;
+  width: 100%;
+}
+.header {
+  background-image: url(../IMG/G-B-3.jpg);
+  background-size:cover;
+  background-position-y: top;
+  background-repeat: no-repeat;
+    color: #e6e5e1;
+  }
+/* .header .nav a{
+    color: #fff !important;
+    padding: 10px;
+} 
+.header .nav a:hover {
+    background-color: #fff;
+    color:#433f37 !important;
+    border-radius: 30px;
+  } */
+#header-text {
+    padding: 300px 50px;
+}
+#header-text img {
+    width: 70px;
+}
+
+/* #logo img{
+    max-width: 80px;
+    height:auto;
+} */
+.break {
+  background-color: #433f37;
+  height: 5px;
+}
+/********************************************** SECTION 2 (location) **********************************************/
+#location {
+  background-color: #e6e5e1;
+  padding: 40px 0px;
+  background-image: url(../IMG/line-2.png);
+    background-size:contain;
+    background-position-x: 300px;
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+}
+.loc-text {
+  padding-top: 20%;
+  padding-left: 25px !important;
+  
+}
+/********************************************** SECTION 3 (schedules) **********************************************/
+#schedule {
+  background-color: #5b5545;
+  color: #e6e5e1;
+  padding: 75px 0px;
+ 
+  background-image: url(https://i.ibb.co/WN4H5xPB/line-3.png);
+  background-size:contain;
+  background-position-x: -20px;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  background-attachment:inherit;
+}
+.list {
+  padding-left: 25% !important;
+}
+ul {
+  list-style-type: none !important;
+}
+.sched-img img{
+  width: 250px !important;
+}
+/********************************************** SECTION 4 (details) **********************************************/
+#details {
+  background-color: #e6e5e1;
+  padding: 75px 0px;
+}
+#details .col-lg-6, #details .col-sm-12 {
+  padding: 40px;
+}
+#details h2 {
+  padding-bottom: 20px;
+}
+
+/********************************************** GENERAL **********************************************/
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+img {
+    width: 100%;
+}
+.heading {
+    font-size: 70px;
+    line-height: 75px;
+}
+.link {
+  color: #2f2e2c;
+  font-weight: 700;
+  text-decoration: none;
+}
+.link:hover {
+  color: #5b5545;
+  text-decoration: underline;
+}
+.bottom-footer {
+  padding:100px 0px;
+  background-color: #2f2e2c;
+  color: #e6e5e1;
+}
+.bottom-footer p {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  color: #e6e5e1;
+}
+.desktop {
+  display: block;
+}
+/*************************************************  *************************************************/
+/********************************************** TABLET **********************************************/
+/*************************************************  *************************************************/
+@media screen and (max-width: 990px) and (min-width: 490px){ 
+.desktop {
+  display: none !important;
+}
+.list {
+padding: 0px 0px 0px 50px !important;
+}
+.nav {
+  justify-content: center !important;
+}
+.header {
+  background-image: url(../IMG/G-B-3.jpg);
+  background-size:cover;
+  background-position: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+    color: #e6e5e1;
+  }
+  #header-text {
+    padding: 250px 50px;
+}
+
+}
+/*************************************************  *************************************************/
+/********************************************** MOBILE **********************************************/
+/*************************************************  *************************************************/
+@media screen and (max-width: 490px){ 
+  .desktop {
+    display: none !important;
+  }
+  .nav {
+    justify-content: center !important;
+  }
+  .header {
+    background-image: url(../IMG/G-B-3.jpg);
+    background-size:cover;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+      color: #e6e5e1;
+    }
+    #header-text {
+      padding: 250px 20px 200px 20px;
+  }
+  h1 {
+    font-size: 3.5em !important;
+  }
+  .list {
+    padding: 50px 50px 0px 50px !important;
+    }
+    .loc-text {
+      padding: 70px 20px 0px 20px !important;
+    }
+    #RSVPfooter {
+      padding: 0px 20px;
+    }
+}
